@@ -2,7 +2,7 @@ package com.example.mypegasus.learnfragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+//import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 /**
  * Created by Administrator on 2015/8/2 0002.
  */
-public class AnotherFragment extends Fragment {
-//public class AnotherFragment extends android.app.Fragment {
+//public class AnotherFragment extends Fragment {
+public class AnotherFragment extends android.app.Fragment {
 
 	@Nullable
 	@Override

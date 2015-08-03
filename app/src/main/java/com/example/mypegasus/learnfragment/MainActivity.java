@@ -1,11 +1,13 @@
 package com.example.mypegasus.learnfragment;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+//public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -13,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_main);
 		if(savedInstanceState == null) {
 			// getSupportFragmentManager()支持的是 extends android.support.v4.app.Fragment 的相关Fragment
-			getSupportFragmentManager().beginTransaction().add(R.id.fragment, new MainActivityFragment()).commit();
+			//getSupportFragmentManager().beginTransaction().add(R.id.fragment, new MainActivityFragment()).commit();
 			// getFragmentManager()支持的是 extends android.app.Fragment 的相关Fragment
-			//getFragmentManager().beginTransaction().add(R.id.fragment, new MainActivityFragment()).commit();
+			getFragmentManager().beginTransaction().add(R.id.fragment, new MainActivityFragment()).commit();
 		}
 	}
 

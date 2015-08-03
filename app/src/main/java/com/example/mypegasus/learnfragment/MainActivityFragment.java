@@ -1,6 +1,6 @@
 package com.example.mypegasus.learnfragment;
 
-import android.support.v4.app.Fragment;
+//import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 /**
  * A placeholder fragment containing a simple view.
  */
-public class MainActivityFragment extends Fragment {
-//public class MainActivityFragment extends android.app.Fragment {
+//public class MainActivityFragment extends Fragment {
+public class MainActivityFragment extends android.app.Fragment {
 
 	public MainActivityFragment() {
 	}
@@ -29,9 +29,10 @@ public class MainActivityFragment extends Fragment {
 				ts.add(R.id.fragment, new AnotherFragment());
 				ts.addToBackStack(null);
 				ts.commit();*/
+				/* addToBackStack 没有效果，当Fragment 继承与android.app.Fragment*/
 				getFragmentManager().beginTransaction().
-						addToBackStack(null).
 						replace(R.id.fragment, new AnotherFragment()).
+						addToBackStack(null).
 						commit();
 			}
 		});
