@@ -15,4 +15,10 @@
 		android:layout_height="wrap_content"
 		android:text="呈现另一个Fragment"
 		android:id="@+id/btn_showAnotherFragment"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="启动有侧边栏的Activity"
+		android:id="@+id/btn_startSliderActivity"/>
 </LinearLayout>

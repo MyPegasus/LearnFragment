@@ -1,6 +1,7 @@
 package com.example.mypegasus.learnfragment;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.util.Log;
@@ -52,6 +53,13 @@ public class MainActivityFragment extends Fragment {
 						replace(R.id.fragment, new AnotherFragment()).
 						addToBackStack(null).
 						commit();
+			}
+		});
+
+		root.findViewById(R.id.btn_startSliderActivity).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(getActivity(), SliderActivity.class));
 			}
 		});
 
