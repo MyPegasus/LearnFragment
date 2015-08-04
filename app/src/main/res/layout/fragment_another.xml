@@ -15,4 +15,16 @@
 		android:layout_height="wrap_content"
 		android:text="后退"
 		android:id="@+id/btn_back"/>
+
+    <EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/et_showText"
+		android:text="second fragment"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="呈现第三个Fragment"
+        android:id="@+id/btn_showThirdFragment"/>
 </LinearLayout>
