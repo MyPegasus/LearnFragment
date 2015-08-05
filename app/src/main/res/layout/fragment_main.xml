@@ -21,4 +21,10 @@
 		android:layout_height="wrap_content"
 		android:text="启动有侧边栏的Activity"
 		android:id="@+id/btn_startSliderActivity"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="启动Tabbed Activity"
+		android:id="@+id/btn_startTabbedActivity"/>
 </LinearLayout>

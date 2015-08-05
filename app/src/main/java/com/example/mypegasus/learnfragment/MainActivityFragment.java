@@ -63,6 +63,13 @@ public class MainActivityFragment extends Fragment {
 			}
 		});
 
+		root.findViewById(R.id.btn_startTabbedActivity).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(getActivity(), TabbedActivity.class));
+			}
+		});
+
 		Log.w(TAG, "MainFragment onCreateView()...");
 		return root;
 	}

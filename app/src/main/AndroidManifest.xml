@@ -22,6 +22,10 @@
             android:name=".SliderActivity"
             android:label="@string/title_activity_silder" >
         </activity>
+        <activity
+            android:name=".TabbedActivity"
+            android:label="@string/title_activity_tabbed" >
+        </activity>
     </application>
 
 </manifest>
